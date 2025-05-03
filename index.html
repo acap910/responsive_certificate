@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Tech Preferences Survey</h1>
+        <p id="description">Help us understand your technology usage habits</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+            <input type="number" id="number" name="age" min="13" max="120" placeholder="Age">
+        </div>
+
+        <div class="form-group">
+            <label for="dropdown">Which device do you use most?</label>
+            <select id="dropdown" name="device" required>
+                <option disabled selected value>Select your primary device</option>
+                <option value="smartphone">Smartphone</option>
+                <option value="laptop">Laptop</option>
+                <option value="tablet">Tablet</option>
+                <option value="desktop">Desktop Computer</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>How often do you use technology for work?</p>
+            <label>
+                <input type="radio" name="usage" value="daily" class="input-radio" checked>
+                Daily
+            </label>
+            <label>
+                <input type="radio" name="usage" value="weekly" class="input-radio">
+                Weekly
+            </label>
+            <label>
+                <input type="radio" name="usage" value="monthly" class="input-radio">
+                Monthly
+            </label>
+            <label>
+                <input type="radio" name="usage" value="rarely" class="input-radio">
+                Rarely
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Which tech services do you use? <span class="clue">(Check all that apply)</span></p>
+            <label>
+                <input type="checkbox" name="services" value="cloud" class="input-checkbox">
+                Cloud Storage
+            </label>
+            <label>
+                <input type="checkbox" name="services" value="streaming" class="input-checkbox">
+                Video Streaming
+            </label>
+            <label>
+                <input type="checkbox" name="services" value="social" class="input-checkbox">
+                Social Media
+            </label>
+            <label>
+                <input type="checkbox" name="services" value="gaming" class="input-checkbox">
+                Online Gaming
+            </label>
+            <label>
+                <input type="checkbox" name="services" value="ecommerce" class="input-checkbox">
+                E-commerce
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Any additional comments about your tech experience?</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit">Submit Survey</button>
+        </div>
+    </form>
+</body>
+</html>
