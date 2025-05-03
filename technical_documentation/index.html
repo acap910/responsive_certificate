@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+            <li><a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a></li>
+            <li><a class="nav-link" href="#Control_Flow">Control Flow</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a high-level, interpreted programming language known for its readability and versatility.</p>
+            <p>Created by Guido van Rossum and first released in 1991, Python has become one of the most popular programming languages worldwide.</p>
+            <code>print("Hello, World!")</code>
+            <p>Key features include:</p>
+            <ul>
+                <li>Easy-to-read syntax</li>
+                <li>Cross-platform compatibility</li>
+                <li>Large standard library</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Getting_Started">
+            <header>Getting Started</header>
+            <p>To begin programming in Python, you'll need to install it on your computer.</p>
+            <p>Follow these steps:</p>
+            <ol>
+                <li>Download Python from the official website</li>
+                <li>Run the installer</li>
+                <li>Verify installation by running python --version in your terminal</li>
+            </ol>
+            <code># This is a single-line comment in Python</code>
+            <p>Once installed, you can run Python code in:</p>
+            <ul>
+                <li>The interactive interpreter</li>
+                <li>Script files (.py extension)</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Variables_and_Data_Types">
+            <header>Variables and Data Types</header>
+            <p>Python has several built-in data types:</p>
+            <code>x = 5          # Integer
+y = "Hello"    # String
+z = 3.14       # Float</code>
+            <p>Variables are created when you first assign a value to them:</p>
+            <code>counter = 100    # An integer assignment
+miles   = 1000.0  # A floating point
+name    = "John"  # A string</code>
+            <p>Python is dynamically typed, meaning you don't need to declare variable types.</p>
+        </section>
+
+        <section class="main-section" id="Control_Flow">
+            <header>Control Flow</header>
+            <p>Control flow statements determine the order in which code executes.</p>
+            <p>Conditional statements:</p>
+            <code>if x > 0:
+    print("Positive")
+elif x == 0:
+    print("Zero")
+else:
+    print("Negative")</code>
+            <p>Loop statements:</p>
+            <code># While loop
+while x < 5:
+    print(x)
+    x += 1
+
+# For loop
+for i in range(5):
+    print(i)</code>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are reusable blocks of code that perform a specific task.</p>
+            <code>def greet(name):
+    """This function greets the person passed in"""
+    print("Hello, " + name + ". Good morning!")</code>
+            <p>Function components:</p>
+            <ul>
+                <li>def keyword</li>
+                <li>Function name</li>
+                <li>Parameters (optional)</li>
+                <li>Docstring (optional)</li>
+                <li>Function body</li>
+                <li>return statement (optional)</li>
+            </ul>
+            <p>Example with return value:</p>
+            <code>def square(number):
+    return number * number</code>
+        </section>
+    </main>
+</body>
+</html>
